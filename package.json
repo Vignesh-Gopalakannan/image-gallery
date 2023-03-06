@@ -1,0 +1,35 @@
+{
+  "name": "imagezoomviewer",
+  "widgetName": "ImageZoomViewer",
+  "version": "1.0.0",
+  "description": "Widget to display series of images with zoom in, zoom out and rotate features",
+  "copyright": "2023",
+  "author": "Vignesh G",
+  "config": {
+    "projectPath": "../..//",
+    "mendixHost": "http://localhost:8082",
+    "developmentPort": "8084"
+  },
+  "packagePath": "mxtechies",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server --open",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.14.0",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/react": "~16.9.0",
+    "@types/react-dom": "~16.9.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-photo-view": "^1.2.3"
+  }
+}

@@ -1,0 +1,30 @@
+/*
+Place your custom CSS here
+*/
+.pv-main {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pv-rem-count {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.pv-img-rel {
+    position: relative;
+}
+
+.pv-img-overlay {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.pv-img-overlay img {
+    opacity: 0.8;
+}

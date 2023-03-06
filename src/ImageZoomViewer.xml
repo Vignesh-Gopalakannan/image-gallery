@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mxtechies.imagezoomviewer.ImageZoomViewer" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Image Gallery</name>
+    <description>Widget to display series of images with zoom in, zoom out and rotate features</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAACXBIWXMAAC4jAAAuIwF4pT92AAADBklEQVRoge1a3XHaQBDey/AOHXAdQAfBFcSpAPKumcgVGDrQg97BFZhUEKggpoKIDnAFyizZc1brk3S2GSLY+2Y8I+v2fr717e53Z5myLEErPqllHskrRiSvFZG8VkTyWhHJa0UkrxWRvFaoJt8LNTQ2GQDAuMHkUBb502mWdR4E3eQQ8Q0AjFpMv5VFvroU8qHbfhVAHLE0NmnaHZ3Ccdsbm6QAMBALw22c0bNsa8JbbP8resYmSPC7bxHGJrYs8vRSyLwVvZYk9u4tbGzSxWvhPQCkZZGvQWGpGwLAo7HJDBTX+QwrmFbyfQxp9QoPa/hnT9szJgd6Tknk9FvGeyiLfMN+31I/xATLJwDMnRLEagIAGH/3zD5zCYnE1S32oXh12NO6gY3t47Bgz5i8v/DG4P/VkXi5bTB50QVk+wsnL4t8Dv/KZlEzNi5+4mw97T6F+VU4qRB/HD43tj8JB968Ik+GdbV9HaLfjU3W5OWFJOTOCGKHyP5jcmbB3uEu+c3MnslhbhehA39S264s8jHru/HsjCr5AA0vJ8QJMmFjmYcr5KnELH1jMYIb1h/DaMbacatP2Vw7GuNA7RmF0dg5zthkzsKqQl4mvLRFw/cF2QF5lP8MfR2J2JK9wrHWwiwT/afGJjzUZNiM+HpIjc4Y8UkN8SPOme2t5510lO9c0KYyp060wF8H8DwgnVvBtZS6pefdqq06XQv5heedt3JwXAP5rUiqx9ChRHrX1PHSye+59qBs/1JCSXc81HWW5A8BE4bYnAu3rMxN6F5iROXNIaWS2Ey+zVM0yKyh/Zy4Y3pDZvZ7cgaQc2akKyp4dXtLoqIrBOvwg12xQU1mX6EIQ/LoJLqqq1SFD32HJySlD3smTAY1AmrLnsceEnwMpx53Ivx8hxrZV45/E3xv/04M6xRfwMIdfGOE3CRD2/wf/gLT2OQQcNTtGjD+7SlKXdfzgw+o/w8n+faWTndpjX7vEqqXKfHDY6WI5LUikteKSF4rInmtiOS1IpLXikheKyJ5lQCAP7wxHk2UDwr3AAAAAElFTkSuQmCC</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="imageList" type="datasource" isList="true" required="true">
+                <caption>Data source</caption>
+                <description>Data source for the list of images (Generalized System.Image Entity)</description>
+            </property>
+            <property key="visibleImages" type="integer" defaultValue="2">
+                <caption>Visible Images</caption>
+                <description>No of images to be visible</description>
+            </property>
+            <property key="fontSize" type="integer" defaultValue="36">
+                <caption>Font Size</caption>
+                <description>Font size of the remaining image count</description>
+            </property>
+            <property key="isLoop" type="boolean" defaultValue="true">
+                <caption>Loop Image</caption>
+                <description>Whether to cycle the preview, when the number is reached</description>
+            </property>
+            <property key="isBannerVisible" type="boolean" defaultValue="true">
+                <caption>Display Banner</caption>
+                <description>Display navigation icon, rotate, zoom in and zoom out banner</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Styles and Animation">
+            <property key="imageWidth" type="integer" defaultValue="164">
+                <caption>Image Width</caption>
+                <description>Width of the visible image</description>
+            </property>
+            <property key="imageHeight" type="integer" defaultValue="164">
+                <caption>Image Height</caption>
+                <description>Height of the visible image</description>
+            </property>
+            <property key="transitionSpeed" type="integer" defaultValue="2">
+                <caption>Transition Speed</caption>
+                <description>Transition speed of image when viewed in milliseconds</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
